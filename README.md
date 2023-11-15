@@ -4,15 +4,15 @@
  * @Author: Aloof rongquanhuang01@gmail.com
  * @Date: 2023-11-01 10:24:05
  * @LastEditors: WhimsyQuester rongquanhuang01@gmail.com
- * @LastEditTime: 2023-11-15 15:28:48
+ * @LastEditTime: 2023-11-15 15:40:19
  * Copyright (c) 2023 by Aloof , All Rights Reserved.
 -->
 
 # 1.介绍
 
-```bash
-    在项目开发过程中，有很多业务模块的代码是具有一定规律性的，例如 controller 控制器、service 接口、service 实现类、mapper 接口、model 实体类等等，这部分代码可以使用代码生成器生成，我们就可以将更多的时间放在业务逻辑上。
+&emsp;&emsp;在项目开发过程中，有很多业务模块的代码是具有一定规律性的，例如 controller 控制器、service 接口、service 实现类、mapper 接口、model 实体类等等，这部分代码可以使用代码生成器生成，我们就可以将更多的时间放在业务逻辑上。
 
+```bash
 传统的开发步骤：
 (1)创建数据库和表
 (2)根据表设计实体类
@@ -23,11 +23,11 @@
 
 基于代码生成器开发步骤：
 (1)创建数据库和表
-(2)使用代码生成器生成entity实体类、mapper接口、service接口和实现类、controller 控制器、前端页面
+(2)使用代码生成器生成entity实体类、mapper接口、service接口和实现类、controller 控制器
 (3)将生成好的代码拷贝到项目中并做调整
-
-    我们只需要知道数据库和表相关信息，就可以结合模版生成各个模块的代码，减少了很多重复工作，也减少出错概率，提高开发效率。
 ```
+
+&emsp;&emsp;我们只需要知道数据库和表相关信息，就可以结合模版生成各个模块的代码，减少了很多重复工作，也减少出错概率，提高开发效率。
 
 # 2.实现思路
 
