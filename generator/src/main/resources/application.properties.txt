@@ -1,0 +1,68 @@
+# 数据库驱动程序的名称
+db.driver.name=com.mysql.cj.jdbc.Driver
+# 数据库的URL，指定了连接数据库的地址、端口和其他选项，如时区、字符编码等
+db.url=jdbc:mysql://localhost:3306/forumhub?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+# 数据库的用户名
+db.username=root
+# 数据库的密码
+db.password=root
+
+
+# 生成代码保存输出的相对路径
+path.base=code
+# 基础包名
+package.base=com.example.demo
+# 枚举类所在的包名
+package.enums=entity.enums
+# 实体类（PO、Bean）所在的包名
+package.bean=entity.po
+# 查询对象（Query）所在的包名
+package.param=entity.query
+# 值对象（VO）所在的包名
+package.vo=entity.vo
+# Mapper接口所在的包名
+package.mapper=mappers
+# Service接口所在的包名
+package.service=service
+# Service实现类所在的包名
+package.service.impl=service.impl
+# Controller类所在的包名
+package.controller=controller
+
+
+# Mapper接口的后缀定义
+suffix.mapper=Mapper
+# Mapper XML文件的后缀定义
+suffix.mapper.xml=Mapper
+# Service接口的后缀定义
+suffix.service=Service
+# Service实现类的后缀定义
+suffix.service.impl=ServiceImpl
+# Controller类的后缀定义
+suffix.controller=Controller
+# 模糊搜索属性的后缀定义
+suffix.property.fuzzy=Fuzzy
+# 查询对象的后缀定义
+suffix.bean.param=Query
+# 时间区间搜索开始属性的后缀定义
+suffix.bean.param.time.start=Start
+# 时间区间搜索结束属性的后缀定义
+suffix.bean.param.time.end=End
+
+
+# 是否忽略数据库表名的前缀部分：如果设置为true，则生成的代码中将忽略数据库表名的前缀部分
+ignore.table.prefix=false
+# 分表前缀定义：如果数据库使用了分表技术，并且表名以指定的前缀开头，生成的代码将按照分表规则进行处理
+table.split.prefix=template
+# JSON返回忽略的属性。指定在将Java对象转换为JSON格式时，需要忽略的属性列表
+ignore.bean.tojson.column=company_id,phone
+# json返回忽略的属性
+ignore.bean.tojson.expression=@JsonIgnore
+ignore.bean.tojson.class=com.fasterxml.jackson.annotation.JsonIgnore
+# 日期格式化
+bean.date.expression=@JsonFormat(pattern = "%s", timezone = "GMT+8")
+bean.date.expression.class=com.fasterxml.jackson.annotation.JsonFormat
+# 日期参数格式化
+bean.data.format=@DateTimeFormat(pattern = "%s")
+bean.date.format.class=org.springframework.format.annotation.DateTimeFormat
+
